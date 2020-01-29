@@ -124,8 +124,8 @@ def predict_the_class(model,image):
 
 app=Flask(__name__)
 #run_with_ngrok(app)
-delete_img_folder()
-app.config['SECRET_KEY']="LoL 13 NoOne Can Guess This Key XD"
+#delete_img_folder()
+app.config['SECRET_KEY']="15qew1x5fv1a9sd651cqw4f952x1cgf1bnm"
 #app.config['DEBUG']=True
 app.config['IMAGE_UPLOAD']=make_img_folder()#os.path.join(os.getcwd(),'static','images')
 

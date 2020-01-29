@@ -14,7 +14,7 @@ Original file is located at
 
 #web app libraries
 from flask import Flask,request,render_template,flash,url_for,redirect
-from flask_ngrok import run_with_ngrok
+#from flask_ngrok import run_with_ngrok
 
 #OS and Measure Time
 import os
@@ -124,7 +124,7 @@ def predict_the_class(model,image):
 
 app=Flask(__name__)
 #run_with_ngrok(app)
-
+delete_img_folder()
 app.config['SECRET_KEY']="LoL 13 NoOne Can Guess This Key XD"
 #app.config['DEBUG']=True
 app.config['IMAGE_UPLOAD']=make_img_folder()#os.path.join(os.getcwd(),'static','images')
